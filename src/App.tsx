@@ -1,25 +1,26 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {getRepos, getUserData} from "./github-api";
+import NavMenu from './components/NavMenu';
+
+import {BrowserRouter as Router, Route} from "react-router-dom";
 
 function App() {
+
+
+  var repos = getRepos("Michal696").then(r => {
+    debugger;
+    return r});
+
+  // getUserData()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+        <Route path='/' component={NavMenu} />
+        {/*<Route exact path='/' component={Home} />*/}
+        {/*<Route path='/counter' component={Counter} />*/}
+        {/*<Route path='/fetch-data/:startDateIndex?' component={FetchData} />*/}
+      </Router>
   );
 }
 
