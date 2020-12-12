@@ -16,7 +16,7 @@ function App() {
   return (
       <Router>
         <Route path='/' component={NavbarComponent} />
-        <Route path='/' component={InputPageComponent} />
+        {/*<Route path='/' component={InputPageComponent} />*/}
         <Route path='/:userId' component={RepositoriesComponent} />
         <Route path='/:userId' component={OrganizationsComponent} />
       </Router>
