@@ -37,7 +37,7 @@ export default function ButtonAppBar() {
             </Typography>
           </Toolbar>
         </AppBar>
-        <InputPageComponent/>
+        {/*<InputPageComponent/>*/}
       </div>
   );
 }

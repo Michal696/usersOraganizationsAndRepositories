@@ -49,8 +49,9 @@ class Repositories extends React.Component<RouteComponentProps<any>, IState> {
   }
 
   public render() {
-    const datarecords = this.state.datarecords;
+    const datarecords = this.state.datarecords ? this.state.datarecords: [];
     const each_datarecord_keys = ["name", "git_url"];
+    debugger;
     return (
         <div className="text-center">
           {datarecords.length === 0 && (
