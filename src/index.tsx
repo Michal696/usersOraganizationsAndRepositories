@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { ConnectedRouter } from 'connected-react-router';
 import reportWebVitals from './reportWebVitals';
 
 // Get the application-wide store instance, prepopulating with state from the server where available.
