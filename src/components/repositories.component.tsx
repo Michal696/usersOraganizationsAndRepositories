@@ -3,7 +3,6 @@ import {RouteComponentProps} from 'react-router-dom';
 import {getRepos} from "../github-api";
 
 export interface IState {
-  apiurl: string;
   datarecords: any[];
   datacolumns: any[];
 }
