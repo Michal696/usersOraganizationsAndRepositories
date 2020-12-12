@@ -35,7 +35,6 @@ export default function ButtonAppBar() {
             <Typography variant="h6" className={classes.title}>
               Repository Search
             </Typography>
-            <Button color="inherit">Login</Button>
           </Toolbar>
         </AppBar>
         <InputPageComponent/>
