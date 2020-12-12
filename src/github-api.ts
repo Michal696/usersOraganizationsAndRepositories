@@ -6,7 +6,9 @@ const BASE_URL = 'https://api.github.com';
 
 function getRepos(username: string) {
   const url = `${BASE_URL}/users/${username}/repos?per_page=250`;
-  return axios.get(url).then(response => response.data);
+  return axios.get(url).then(response => response.data).catch(error => {
+    console.log(error);
+  });
 }
 
 function getUserData(username: string) {
